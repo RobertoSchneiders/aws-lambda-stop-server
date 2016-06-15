@@ -12,7 +12,7 @@ var AWS = require('aws-sdk');
 var pify = require('pify');
 var Promise = require('pinkie-promise');
 
-var ec2 = new AWS.EC2();
+var ec2 = new AWS.EC2({region: 'sa-east-1'});
 
 /**
  * The handler function.
